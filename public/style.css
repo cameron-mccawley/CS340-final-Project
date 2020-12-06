@@ -1,0 +1,52 @@
+table, th, td{ /* default table */
+    border: 1px solid black;
+}
+
+/* add css here */
+
+.green_button{
+	background-color: #5a8c8c;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 6px 6px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 2px 2px;
+	cursor: pointer;
+}
+
+header{
+	height: 20px;
+	background-color: lightgray;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding: 20px 20px 20px 20px;
+	font-size: 1.5em;
+}
+
+header > h1{
+	color: white;
+	font-size: 3em;
+	font-style: italic;
+	text-align: right;
+}
+
+
+header em{
+	font-size: 0.75em;
+}
+
+html{
+	background-color: lightgray;
+	font-family: Helvetica;
+	font-size: 18px;
+}
+
+label{
+	text-decoration: none;
+
+}
