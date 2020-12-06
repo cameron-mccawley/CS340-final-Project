@@ -40,7 +40,6 @@ module.exports = function(){
         });
     }
 
-    /* Find people whose fname starts with a given string in the req */
     function getProjectInfo(req, res, mysql, context, complete) {
       //sanitize the input as well as include the % character
        var query2 = "SELECT Pname, Pnumber, Plocation FROM PROJECT WHERE Pnumber = ?";
@@ -71,7 +70,6 @@ module.exports = function(){
         });
     }
 
-    /*Display all people. Requires web based javascript to delete users with AJAX*/
 
     router.get('/', function(req, res){
         var callbackCount = 0;
@@ -89,7 +87,7 @@ module.exports = function(){
         }
     });
 
-    /*Display all people from a given homeworld. Requires web based javascript to delete users with AJAX*/
+
     router.get('/filter/:project', function(req, res){
         var callbackCount = 0;
         var context = {};
@@ -107,7 +105,6 @@ module.exports = function(){
         }
     });
 
-    /*Display all people whose name starts with a given string. Requires web based javascript to delete users with AJAX */
     router.get('/search/:s', function(req, res){
         var callbackCount = 0;
         var context = {};
